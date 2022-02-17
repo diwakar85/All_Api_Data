@@ -1,3 +1,4 @@
+import 'package:api_data/Sevice_Page/api_three.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -44,6 +45,12 @@ class _HomePageState extends State<HomePage> {
               child: const Text("Api Two"),
               onPressed: (){
                 Get.to(const ApiTwo());
+              },
+            ),
+            ElevatedButton(
+              child: const Text("Api Three"),
+              onPressed: (){
+                Get.to(const ApiThree());
               },
             ),
           ],

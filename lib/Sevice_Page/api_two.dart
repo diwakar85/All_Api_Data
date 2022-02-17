@@ -23,7 +23,7 @@ class _ApiTwoState extends State<ApiTwo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(title:const Text("API TWO"),),
       body: FutureBuilder(
         future: fatchData(),
         builder: (context,sanpshot){
@@ -41,6 +41,7 @@ class _ApiTwoState extends State<ApiTwo> {
                   child:ListTile(
                     leading: Text("${data?[i].id}"),
                     title: Text("${data?[i].name}"),
+                    subtitle: Text("${data?[i].email}"),
                   ),
                 );
               }
